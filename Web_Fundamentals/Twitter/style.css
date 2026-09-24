@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container{
+    width:800px;
+    height:800px;
+    background-color: gray;
+    margin:20px;
+    padding:20px;
+    display:flex;
+}
+.sign_in_container{
+    height:600px;
+    width: 500px;
+    background-color: white;
+    margin:20px auto;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+.T_logo{
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    width:100%;
+}
+
+.H1{
+    padding: 10px 10px 10px 0;
+    font-size:large;
+    margin:0;
+}
+
+.brand_in{
+    display:flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    font-size: small;
+    border-radius: 20px;
+    width:55%;
+    justify-content: center;
+    padding:5px;
+    margin:10px;
+}
+.brand_in img{
+    width:10%;
+}
+#apple_in{
+    font-family:sans-serif;
+}
+
+.seperator{
+    display:flex;
+    align-items: center;
+    margin:10px;
+    gap:3px;
+
+}
+.halfline{
+   color:gray;
+   width:100%;
+}
+
+.input_box{
+    width:50%;
+    border: 1px solid gray;
+    font-size: small;
+    padding: 10px;
+    margin:5px;
+    color: gray
+    
+}
+.next{
+    color:white;
+    background-color: black;
+    border-radius: 20px;
+    width:50%;
+    margin:10px;
+    padding:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+ }
+.frget_passwd{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 50%;
+    padding:5px;
+    margin: 10px;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+}
+.new_account{
+    display:flex;
+    justify-content: flex-start;
+    font-size: small;
+    gap:2px;
+    margin-top:30px;
+    width:50%;
+}
+a:link{
+    text-decoration: none;
+    color: steelblue;
+}
