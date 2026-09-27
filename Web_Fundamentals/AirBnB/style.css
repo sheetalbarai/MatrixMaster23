@@ -2,5 +2,42 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    
+}
+body{
+    width:1000px;
+    margin:10px;
+}
+header{
+    border-bottom: 2px solid lightgray;
+}
+header ul{
+    margin:10px;
+    padding-left: 15px;
+    font-size: smaller;
+}
+header p{
+    font-size: small;
+}
+
+.footer_channels{
+    display: flex;
+    gap:15px;
+    align-items: center;
+    justify-content:flex-start;
+    padding-left: 10px;
+    height: 50px;
+}
+.footer_channels p{
+    font-style: italic;
+}
+#CNNlogo{width:5%;}
+#NYTlogo{width:15%;}
+#TClogo{width:10%;}
+#NWlogo{width:10%;}
+#WSlogo{width:17%;}
+#NBClogo{width:10%}
+
+.footer_links{
+    padding: 15px;
+    font-size: smaller;
 }
