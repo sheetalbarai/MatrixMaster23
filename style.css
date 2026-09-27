@@ -1,0 +1,15 @@
+table, th, td{
+    border:1px, solid, gray;
+    border-collapse: collapse;
+}
+h3{
+    color: darkblue;
+    text-decoration:underline;
+}
+.done{
+    background-color: darkgreen;
+    color:white;
+}
+.inp{
+    background-color: yellow;
+}
