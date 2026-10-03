@@ -13,3 +13,7 @@ h3{
 .inp{
     background-color: yellow;
 }
+a:visited{
+    color: blue;
+    
+}
