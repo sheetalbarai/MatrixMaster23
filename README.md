@@ -1,3 +1,3 @@
 # MatrixMaster23
-Assignments Status 
+Assignments Status: 
 https://sheetalbarai.github.io/MatrixMaster23/
