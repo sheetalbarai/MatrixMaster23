@@ -34,7 +34,8 @@ function addItem(){
         const li = document.createElement('li');
         li.innerHTML = newItem;
         toDoUL.appendChild(li);
-        toDoItem.value = 'Type Items'; toDoItem.style.color = 'gray';
+        //toDoItem.value = 'Type Items'; toDoItem.style.color = 'gray';
+        toDoItem.value = "";
     }
     newItem = "";
 }
@@ -81,6 +82,8 @@ function validateLogin(e) {
         loginStatus.innerHTML = "Username is not registered !!";
         loginStatus.style.color = 'red';
     }
-    userName.value = 'username'; userName.style.color = 'gray';
-    passWord.value = 'password'; passWord.style.color = 'gray';
+    //userName.value = 'username'; userName.style.color = 'gray';
+    //passWord.value = 'password'; passWord.style.color = 'gray';
+    userName.value = "";
+    passWord.value = "";
 };

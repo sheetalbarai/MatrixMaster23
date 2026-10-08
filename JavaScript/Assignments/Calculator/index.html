@@ -1,20 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Calculator</title>
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
-        <div id="container">
-            <div id="calcScreen"></div>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
+        <div class="container justify-content-left" id="container">
+            <input id="calcScreen" type="text" disabled>
+            <div class="keys"> 
+                <div class="row gap-2">
+                    <button class="all-clear col-6">AC</button>
+                    <button class="btn btn-transparent col"></button>
+                    <button class="operator col" value="/">&#247;</button>
+                </div>
+                <div class="row gap-2">
+                    <button class="btn btn-light btn-lg col" value="7">7</button>
+                    <button class="btn btn-light btn-lg col" value="8">8</button>
+                    <button class="btn btn-light btn-lg col" value="9">9</button>
+                    <button class="operator col" value="*">&#215;</button>
+                </div>
+                <div class="row gap-2">
+                    <button class="btn btn-light btn-lg col" value="4">4</button>
+                    <button class="btn btn-light btn-lg col" value="5">5</button>
+                    <button class="btn btn-light btn-lg col" value="6">6</button>
+                    <button class="operator col" value="-">-</button>
+                </div>
+                <div class="row gap-2">
+                    <button class="btn btn-light btn-lg col" value="1">1</button>
+                    <button class="btn btn-light btn-lg col" value="2">2</button>
+                    <button class="btn btn-light btn-lg col" value="3">3</button>
+                    <button class="operator col" value="+">+</button>
+                </div>
+                <div class="row gap-2">
+                    <button class="decimal col" value=".">.</button>
+                    <button class="btn btn-light btn-lg col" value="0">0</button>
+                    <button class="equal col-6" value="=">=</button>
+                </div>             
+            </div>
         </div>
-
-         <script src="./script.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>

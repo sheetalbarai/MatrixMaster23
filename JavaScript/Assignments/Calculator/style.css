@@ -1,0 +1,52 @@
+*{
+    margin:10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#container{
+    width:25%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    background-image: url(https://goldenwheels.in/wp-content/uploads/2025/03/hanle-ladakh_golden_wheels-1.jpg);
+}
+#calcScreen{
+    border-radius: 10px;
+    height: 70px;
+    margin: 10px;
+    text-align: right;
+    background-color: transparent;
+    color:white;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*.keys{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-evenly;
+}*/
+
+.operator,.equal,.decimal, .all-clear{
+    background-color:lightseagreen;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    width: 50px;
+    border-radius: 10px;
+}
+.equal{
+    background-color: brown;
+}
+.all-clear{
+    background-color:lightcoral;
+    font-weight: 300;
+    width:100%;
+    grid-area:1/1/1/4;
+}
+.equal{
+    width:100%;
+    grid-area: 5/3/5/5;
+}
