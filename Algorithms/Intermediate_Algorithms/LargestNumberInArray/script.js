@@ -12,10 +12,21 @@
 //largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 ////Returns [5,27,39,1001]
 //----------------------------------------------------------------------------------------
+// function with array as input 
+// declare empty array for storing large numbers
+// for loop to go through the sub-arrays in array
+// use Math.max and spread operator to seperate elements of sub array and find a max value among them
+// push the max value to large number array 
+// return the new array.
 
 function largestOfFour(arr) {
-  // You can do this!
-  return arr;
+  let largestArr =[];
+
+  for(let i =0; i < arr.length; i++) {
+    let max_num = Math.max(...arr[i]);
+    largestArr.push(max_num);
+  }
+  return largestArr;
 }
 
 const inputArr = [[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]];
