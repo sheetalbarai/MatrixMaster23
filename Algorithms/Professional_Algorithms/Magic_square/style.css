@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width:300px;
+}
+.container{
+  border: 1px solid blue;
+  width: 200px;
+}
+.numForm{
+    width:200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:5px;
+    margin: 5px;
+    font-size: x-large;
+}
+input{
+    width: 70%;
+    justify-content: left;
+    text-align: center;
+    padding-right: 0;
+}
+button{
+    grid-area: 4/1/4/3;
+}
