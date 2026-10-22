@@ -5,14 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pomodoro clock</title>
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
+        <h1>Pomodoro Clock</h1>
         <div id="clock_container">
+            <p id="work" class="label">Work</p><p id="cycles" class="label">Cycles</p><p id="break" class="label">Break</p>
+            <!--Work Timer-->
+            <div id="workTimer" class="timer">
+                <p id="work_min">25</p><p class="semicolon">:</p><p id="work_sec">00</p>
+            </div>
             
+            <p id="counter" class="timer">0</p>
 
+            <!--Break Timer-->
+            <div id="breakTimer" class="timer">
+                <p id="break_min">5</p><p class="semicolon">:</p><p id="break_sec">00</p>
+            </div>
+            <button id="start" class="btn">Start</button>
+            <button id="pause" class="btn">Pause</button>
+            <button id="reset" class="btn">Reset</button>
         </div>
-
         <script src="./script.js"></script>
     </body>
 </html>

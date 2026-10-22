@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+#clock_container{
+    height: 300px;
+    width :500px;
+    text-align: center;
+    background-color:aquamarine;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+
+}
+
+.label{
+    align-self: center;
+    justify-self: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:blue;
+}
+
+.timer{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#counter{
+    color:red;
+}
+
+.btn{
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+    width: 100px;
+}
