@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 15px ;
+}
+body{
+    width:900px;
+}
+.search{
+    display: flex;
+    width:auto;
+    margin:0;
+    align-self: center;
+}
+#searchID{
+    width:80%;
+    padding:0;
+}
+
+#displayResult{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /* display received images in grid format*/
+    width: 500px;
+}
+
