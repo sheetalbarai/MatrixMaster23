@@ -1,0 +1,2 @@
+Hello , this is text 1.
+Lets do some code in NodeJS
