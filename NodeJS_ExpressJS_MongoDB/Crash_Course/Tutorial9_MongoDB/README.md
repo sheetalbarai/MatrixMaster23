@@ -25,3 +25,5 @@ From this folder:
 ```bash
 npm install
 nodemon app.js
+
+open localhost:3000/ in your browser
