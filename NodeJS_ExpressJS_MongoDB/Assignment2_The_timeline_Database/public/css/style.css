@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+  /*  background-image: url('../HP.png');
+    background-size: cover;*/
+}
+
+h1{
+    color: Black;
+}
+.heading{
+    border-bottom: 2px solid black;
+    padding:10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    gap: 80px;
+}
+
+.newPost {
+    margin: 10px 20px;
+    font-family: monospace;
+    width: 80%;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap:5px;
+      
+    }
+} 
+
+.newPostName{
+    width:200px;
+    height:30px;
+    border-radius: 5px;
+}
+.newPostText{
+    width: 60%;
+    height: 70px;
+    border-radius: 5px;
+    background-color: rgb(238, 243, 242);
+    font-size: medium;
+}
+
+.newPostBtn {
+    width: 120px;
+    height: 25px;
+    background-color: blue;
+    color:white;
+    font-size: smaller;
+    align-self:center;
+    cursor:pointer;     
+}
+
+.msg_container{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    list-style: none;
+    align-items: self;
+    margin: 10px;
+    font-family: monospace;
+    /*color: white;
+    background-color: transparent;*/
+
+}
+
+.msgName{
+    font-style: italic;
+}
+
+.msgContent{
+    padding-left: 20px;
+    align-self: wrap;
+    width:80%;
+}
+
+footer{
+    background-color: lightcoral;
+    height:40px;
+    border: 1px solid black;
+    margin-top:40px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Show A post */
+.btns{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+    margin-right: 50px;
+  
+}
+.btn {
+    width: 100px;
+    height: 25px;
+    color:white;
+    font-size: medium;
+    cursor:pointer;
+   
+}  
+.deletePost {
+    background-color: red;
+}
+.editPost {
+    background-color: blue;
+}
+.seeAPost {
+    margin-top: 20px;
+   
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    li {
+        list-style: none;
+        align-items: center;
+    }
+}

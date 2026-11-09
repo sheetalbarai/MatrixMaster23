@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+<body>
+    <%- include ('./partials/nav.ejs')%>
+    <div class="container">
+        <div class="seeAPost">
+            <% if (comment) { %>
+                <li>
+                    <p class="msgName"><%=comment.name%> - <%=(comment.createdAt).toDateString().slice(3)%></p>
+                    <p class="msgContent"><%=comment.message%></p>
+                </li>
+            <%} else {%>
+                    <p> Error in the path to fetch a comment  ....</p>
+            <%} %>
+            <ul class="btns">
+                <li><button class="btn deletePost" action="/deletePost" method="POST">Delete</button> </li>
+                <li><button class="btn editPost" action="/editPost" method="POST">Edit Post</button> </li>
+            </ul>                   
+        </div>
+        
+    </div>
+    <%- include('./partials/footer.ejs'); %>
+</body>
+</html>
