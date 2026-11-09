@@ -97,3 +97,8 @@ This assignment provides practice with:
 ## Notes
 - A valid MongoDB connection string is required before the application can
   start serving requests.
+
+![alt text](./img/database-createPost1.png)
+![alt text](./img/database-createPost2.png)
+![alt text](./img/SeeMore1.jpg) 
+![alt text](./img/SeeMore2.jpg) 
