@@ -35,7 +35,6 @@ storage.
 ![alt text](./img/validation3.jpg) 
 
 
-
 ## Features and routes
 
 The current application includes code for:
