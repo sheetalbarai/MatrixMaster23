@@ -13,10 +13,10 @@
             <%} else {%>
                     <p> Error in the path to fetch a comment  ....</p>
             <%} %>
-            <ul class="btns">
-                <li><button class="btn deletePost" action="/deletePost" method="POST">Delete</button> </li>
-                <li><button class="btn editPost" action="/editPost" method="POST">Edit Post</button> </li>
-            </ul>                   
+            <div class="btns">
+                <a href="/deletePost/<%=comment._id%>"><button class="btn deletePost">Delete</button></a>
+                <a href="/editPost/<%=comment._id%>"><button class="btn editPost">Edit Post</button></a>
+            </div>                   
         </div>
         
     </div>

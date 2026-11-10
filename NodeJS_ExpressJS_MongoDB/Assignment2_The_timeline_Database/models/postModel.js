@@ -3,12 +3,12 @@ const mongoose = require('mongoose');
 const postSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, 'Name is require']
+        required: [true, 'Name is required']
     },
     message: {
         type: String,
-        required:[true,'Post a message is required'],
-        min:[25,"Post should be minimum 25 characters"]
+        required:[true,'Message should be minimum 25 characters'],
+        minlength:[25,"Post should be minimum 25 characters"]
     }
 }, {timestamps: true});
 
