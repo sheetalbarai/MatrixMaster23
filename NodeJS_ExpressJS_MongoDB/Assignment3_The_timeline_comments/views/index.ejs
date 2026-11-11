@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+<body>
+    <%- include ('./partials/nav.ejs')%>
+    <div class="container">
+        <div class="newPost">
+            <form action="./createNewPost" method="POST">
+                <label>Name</label>
+                <input class="newPostName" name="name" placeholder="Your Name">
+                <lebel> Post a message</lebel>
+                <textarea class="newPostText" name="message" placeholder="Start writing your Post"></textarea>
+                <button class="newPostBtn">Post a message</button>
+            </form>   
+            <% if(error) {%>
+                <p class="error"><%= error%></p>
+            <%}%>
+        </div>
+        <% if (posts.length >0) { %>
+            <div class ="msg_container">
+                <% posts.forEach(post => {%>
+                    <div class="post_container">
+                        <div class="post_info">
+                            <p class="msgName"><%=post.name%> - <%=(post.createdAt).toDateString().slice(3)%></p>
+                            <p class="msgContent"><%=post.message%> <a href="/showAPost/<%=post._id%>">See More</a></p>
+                        </div>  
+                        <div class="comment_container">
+                            <% if(post.linkedComments && post.linkedComments.length >0) {%>
+                                <% post.linkedComments.forEach(comments => {%>
+                                    <div class="comment_info">
+                                        <p class="commentName"><%=comments.name%> - <%=(comments.createdAt).toDateString().slice(3)%></p>
+                                        <p class="commentContent"><%=comments.comment%></p>
+                                        <a href="/deleteAComment/<%=comments._id%>/<%=post._id%>"><button class="deleteCommentBtn">Delete</button></a>   
+                                    </div> 
+                                <%})%>
+                            <%}%>
+                        </div>
+                        <div class="newComment">
+                            <form action="/createNewComment/<%=post._id%>" method="POST">
+                                <textarea class="newCommentText" name="comment" placeholder="Waiting for your Comments..."></textarea>
+                                <input class="newCommentName" name="name" placeholder="Your Name">
+                                 <% if(errorComment) {%>
+                                    <p class="error"><%= errorComment%></p>
+                                <%}%>
+                                <button class="newCommentBtn">Post a comment</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                <% }) %>
+            </div>
+        <%} else {%>
+            <h3><% if(!error) {%> No posts to display... Start creating a new one.<%}%></h3>
+        <% }%>
+          
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
+
+ 

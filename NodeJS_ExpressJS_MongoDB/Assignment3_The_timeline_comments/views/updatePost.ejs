@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+<body>
+    <%- include ('./partials/nav.ejs')%>
+    <div class="container">
+        <div class="updatePost">
+            <% if(post) {%>
+                <form action="/updatePost/<%=post._id%>" method="POST">
+                    <label>Name</label>
+                    <input class="updatePostName" name="name" value="<%=post.name%>" placeholder="Your Name">
+                    <lebel> Edit the message</lebel>
+                    <textarea class="updatePostText" name="message" placeholder="Start writing your Post"><%=post.message%></textarea>
+                    <button class="newPostBtn">Save</button>
+                </form>
+            <% } else {%>
+                <p> Error in fetching the post ....</p>
+            <%}%>
+        </div>
+    </div>
+    <%- include('./partials/footer.ejs'); %>
+</body>
+</html>

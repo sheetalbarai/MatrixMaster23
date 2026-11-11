@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+  /*  background-image: url('../HP.png');
+    background-size: cover;*/
+}
+
+h1{
+    color: Black;
+}
+
+h3{
+    color: blue;
+    font-style: italic;
+    margin-left: 20px;
+}
+.heading{
+    border-bottom: 2px solid black;
+    padding:10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    gap: 80px;
+}
+
+.post_info{
+   margin-left: 10px;
+}
+
+.newPost, .updatePost, .newComment{
+    margin: 10px 20px;
+    font-family: monospace;
+    width: 80%;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap:5px;
+      
+    }
+} 
+
+.newPostName, .updatePostName, .newCommentName{
+    width:200px;
+    height:30px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.newCommentName{
+    height: 20px;
+    font-size: small;
+    
+}
+.newPostText, .updatePostText, .newCommentText{
+    width: 60%;
+    height: 70px;
+    border-radius: 5px;
+    background-color: rgb(238, 243, 242);
+    font-size: medium;
+    padding-left: 5px;
+}
+.newCommentText{
+    height: 40px;
+}
+
+.newPostBtn, .updatePostBtn, .newCommentBtn{
+    width: 120px;
+    height: 25px;
+    background-color: blue;
+    color:white;
+    font-size: smaller;
+    align-self:center;
+    cursor:pointer;     
+}
+.newCommentBtn {
+    background-color: green;
+}
+
+.msg_container{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    list-style: none;
+    align-items: self;
+    margin: 10px;
+    font-family: monospace;
+    /*color: white;
+    background-color: transparent;*/
+
+}
+
+.msgName{
+    font-style: italic;
+}
+
+.msgContent, .commentContent{
+    padding-left: 20px;
+    align-self: wrap;
+    width:80%;
+}
+
+.comment_container{
+    padding-left: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width:80%;
+}
+.deleteCommentBtn {
+    width: 50px;
+    height: 15px;
+    color:white;
+    font-size: smaller;
+    background-color: red;
+    cursor:pointer;
+}
+.comment_info{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: lightcoral;
+    height:40px;
+    border: 1px solid black;
+    margin-top:40px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Show A post */
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+    margin-right: 50px;
+  
+}
+.btn {
+    width: 100px;
+    height: 25px;
+    color:white;
+    font-size: medium;
+    cursor:pointer;
+   
+}  
+.deletePost {
+    background-color: red;
+}
+.editPost {
+    background-color: blue;
+}
+.seeAPost {
+    margin-top: 20px;
+   
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    li {
+        list-style: none;
+        align-items: center;
+    }
+}
+
+/* error */
+.error {
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}

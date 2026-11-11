@@ -3,6 +3,12 @@
 
 A small Express and EJS blog app demonstrating how to connect to MongoDB with Mongoose, define a schema, save and query documents, and render database results in EJS views.
 
+> **Status:** Comment  for the post creation, linking to post, deletion, and 
+> server-side validation are implemented.
+
+#
+
+
 ## What you'll learn
 
 - Connect an Express app to MongoDB Atlas using Mongoose.
