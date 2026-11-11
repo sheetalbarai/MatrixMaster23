@@ -7,12 +7,11 @@ and Mongoose.
 > **Status:** Comment  for the post creation, linking to post, deletion, and 
 > server-side validation are implemented.
 
-# VIDEO OF ADDING, DELETING, VALIDATING COMMENTS, DELETING POST(eventually deleting related comments)
+### VIDEO OF ADDING, DELETING, VALIDATING COMMENTS, DELETING POST(eventually deleting related comments)
 
-![alt text](./img/The_timeline_comment.mp4)
+![Watch Video](./video/The_timeline_comment.mp4)
 
 ## Features
-
 The application supports:
 
 - Listing posts, newest first, with their comments on the home page.
