@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs')%>
+    <body>
+        <%- include('./partials/navTweet.ejs') %>
+        <div class="top_container">
+            <div class="newTweet">
+                <form action="/addTweet" method="POST">
+                    <input class="newTweetTitle" name="title" minlength="20" placeholder="Title">
+                    <textarea class="newTweetText" name="tweet" maxlength="50" placeholder="Tweet message.."></textarea>
+                    <button class="btn submit">Submit</button>
+                </form>   
+                <% if(error) {%>
+                    <p class="error"><%= error%></p>
+                <%}%>
+            </div>
+
+        </div>     
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>

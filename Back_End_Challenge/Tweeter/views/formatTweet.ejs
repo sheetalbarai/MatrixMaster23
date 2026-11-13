@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+<body>
+    <%- include ('./partials/nav.ejs')%>
+    <div class="top_container">
+        <div class="tweet_info">
+            <% if (tweet) { %>
+                <h2 class="tweetTitle"><%=tweet.title%></h2>
+                <p> <%=(tweet.createdAt).toDateString().slice(3)%></p>
+                <p class="tweetMsg"><%=tweet.tweet%></p>
+            <%} else {%>
+                <p> Error in the path to fetch a tweet  ....</p>
+            <%} %>
+            <ul>
+                <li><a href="/tweet/delete/<%=tweet._id%>"><button class="btn delete">Delete</button></a></li>
+                <li><a href="/tweet/edit/<%=tweet._id%>"><button class="btn edit">Edit Post</button></a></li>
+            </ul>             
+        </div>       
+    </div>
+    <%- include('./partials/footer.ejs'); %>
+</body>
+</html>

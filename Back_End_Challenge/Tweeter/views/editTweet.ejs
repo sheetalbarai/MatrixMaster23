@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+<body>
+    <%- include ('./partials/nav.ejs')%>
+    <div class="top_container">
+        <div class="newTweet">
+            <% if(tweet) {%>
+                <p> Edit a Tweet</p>
+                <form action="/tweet/edit/<%=tweet._id%>" method="POST">
+                    <input class="newTweetTitle" name="title" minlength="20" value="<%=tweet.title%>" placeholder="Title">
+                    <textarea class="newTweetText" name="tweet" maxlength="50"placeholder="Start writing your Post"><%=tweet.tweet%></textarea>
+                    <button class="btn submit">Submit</button>
+                </form>
+            <%} else {%>
+                <p> Error in fetching the tweet ....</p>
+            <%}%>
+        </div>
+    </div>
+    <%- include('./partials/footer.ejs'); %>
+</body>
+</html>

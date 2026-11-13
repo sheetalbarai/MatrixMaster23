@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs')%>
+    <body>
+        <%- include('./partials/navTweet.ejs') %>
+        <div class="top_container">
+            <div class="tweet_summary">
+                <h3>There are <%=tweets.length%> tweets</h3>
+                <a href='/addTweet'><button class="btn add">Add Tweet</button></a>
+            </div>
+            <div class ="tweet_container">
+            <% if (tweets.length >0) { %>    
+                    <% tweets.forEach(tweet => {%>
+                        <div class="tweet_info">
+                            <h2 class="tweetTitle"><%=tweet.title%></h2>
+                            <a href="/tweet/<%=tweet._id%>">See More</a>
+                            <p class="tweetMsg"><%=tweet.tweet%></p>
+                            <p><%=(tweet.createdAt).toDateString().slice(3)%></p>
+                        </div>
+                    <%})%>
+            <%} else {%>
+                <h3><% if(!error) {%> No tweets to display... Start adding a new one.<%}%></h3>
+            <%}%>
+        </div> 
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>
