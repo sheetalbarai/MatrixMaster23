@@ -3,10 +3,10 @@ An application built with Node.js, Express, EJS, and MongoDB.
 Users can register and log in, then create and browse tweets.
 
 ### STATUS -Current Limitation
-1. ###Signup/login validation and database error handling are not proper. Need to do it with correct understanding. Server side validation to be communicated from baackend to frontend. 
-2. Tweets are not associated with the creator. may be in future add to it.
-3. if passwords are not matching- preserve the other user information than password.
-4. E11000 duplicate key error - if user tries to register again - need to handle it correctly.
+1. E11000 duplicate key error - if user tries to register again - need to handle it correctly (that is not working). 
+2. Signup/login validation and database error handling are not proper. Need to do it with correct understanding. Server side validation to be communicated from baackend to frontend. 
+3. Tweets are not associated with the creator. may be in future add to it.
+4. if passwords are not matching- preserve the other user information than password.
 
 ## Features
 - User registration and login
